@@ -18,3 +18,8 @@ draw.paths = (ctx, paths, color = "black") => {
     draw.path(ctx, path, color);
   }
 };
+
+// Check if 'module' is defined (Node.js environment)
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = draw;
+}
